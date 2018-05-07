@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/tab_content_iv"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:layout_marginTop="@dimen/dp_3"
+            android:id="@+id/tab_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="10dp"/>
+    </LinearLayout>
+
+    <!--如果不需要小红点,请不要设置下面的布局-->
+    <TextView
+    android:id="@+id/tab_red_count"
+    android:layout_width="12dp"
+    android:layout_height="12dp"
+    android:layout_alignTop="@+id/ll"
+    android:layout_toEndOf="@+id/ll"
+    android:background="@drawable/shape_red_circle"
+    android:gravity="center"
+    android:text="1"
+    android:textColor="@color/white"
+    android:textSize="8dp"/>
+</RelativeLayout>

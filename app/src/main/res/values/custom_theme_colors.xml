@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--********************白天和夜晚对应的颜色的资源文件件********************-->
+    <color name="custom_color_app_bg_day">#FFF</color>                     <!-- app的背景颜色-->
+    <color name="custom_color_app_bg_night">#FF171717</color>              <!-- app的背景颜色-->
+    <color name="custom_color_app_title_bar_bg_day">#ffd845</color>        <!--标题栏的颜色-->
+    <color name="custom_color_app_title_bar_bg_night">#74ffd845</color>    <!--标题栏的颜色-->
+    <color name="custom_color_app_div_bg_day">#eee</color>                 <!--分割线的颜色-->
+    <color name="custom_color_app_div_bg_night">#0d0d0d</color>               <!--分割线的颜色-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    tools:context=".ui.activity.SplashActivity">
+
+    <TextView
+        android:textSize="13sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="12dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/tv_count"
+        android:gravity="center"
+        android:text="跳过广告 5s"
+        android:background="@drawable/shap_daojishi"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+       android:src="@drawable/logo"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

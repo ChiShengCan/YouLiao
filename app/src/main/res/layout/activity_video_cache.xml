@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.VideoCacheActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50">
+
+        <ImageView
+            android:id="@+id/back_cache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"/>
+
+        <TextView
+            android:layout_gravity="center"
+           android:textColor="@color/coclor_333"
+            android:gravity="center"
+            android:text="缓存"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginRight="@dimen/dp_12"
+            android:textColor="@color/coclor_333"
+            android:layout_gravity="right"
+            android:text="编辑"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </android.support.v7.widget.Toolbar>
+    <View
+        android:background="@color/coclor_eee"
+        android:id="@+id/div1"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"/>
+    <RelativeLayout
+        android:background="@color/coclor_eee"
+        android:id="@+id/vip"
+        android:layout_below="@id/div1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40">
+        <TextView
+            android:layout_marginLeft="@dimen/dp_12"
+            android:gravity="center"
+            android:text="开通VIP会员尊享极速缓存"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:textSize="10sp"
+            android:id="@+id/kaitong"
+            android:layout_marginRight="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_6"
+            android:paddingTop="@dimen/dp_6"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:background="@drawable/shap_kaitong"
+            android:textColor="@color/coclor_white"
+            android:text="开通"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="10sp"
+            android:id="@+id/shiyong"
+            android:layout_marginRight="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_6"
+            android:paddingTop="@dimen/dp_6"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12"
+          android:layout_toLeftOf="@id/kaitong"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:background="@drawable/shap_shiyong"
+            android:textColor="@color/coclor_white"
+            android:text="试用"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/flag"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:gravity="center_vertical"
+        android:textColor="@color/coclor_333"
+        android:textSize="@dimen/sp_17"
+        android:text="已缓存"
+        android:layout_below="@id/vip"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_50"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_below="@id/flag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

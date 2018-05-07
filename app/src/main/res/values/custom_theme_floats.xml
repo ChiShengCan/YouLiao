@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="custom_float_imgv_alpha_day" format="float" type="dimen">1.0</item> <!--图片的透明度-->
+    <item name="custom_float_imgv_alpha_night" format="float" type="dimen">0.5</item> <!--图片的透明度-->
+
+</resources>

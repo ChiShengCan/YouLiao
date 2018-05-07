@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorBackground"
+    android:layout_marginBottom="@dimen/dp_5">
+   <RelativeLayout
+       android:id="@+id/user_info"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+       <ImageView
+           android:id="@+id/comment_header"
+           android:src="@drawable/header_2"
+           android:layout_width="50dp"
+           android:layout_height="50dp"/>
+       <TextView
+           android:textSize="13sp"
+           android:id="@+id/comment_name"
+           android:layout_marginTop="@dimen/dp_5"
+           android:layout_marginLeft="@dimen/dp_5"
+           android:layout_toRightOf="@id/comment_header"
+           android:text="csc"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+       <TextView
+           android:id="@+id/comment_content"
+           android:layout_marginTop="@dimen/dp_8"
+           android:layout_below="@id/comment_name"
+           android:layout_marginLeft="@dimen/dp_5"
+           android:layout_toRightOf="@id/comment_header"
+           android:text="内容"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+   </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/reply_comment"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginLeft="55dp"
+        android:layout_below="@+id/user_info"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/comment_time"
+            android:textSize="10sp"
+            android:text="4小时前"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginLeft="@dimen/dp_8"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingRight="@dimen/dp_8"
+            android:paddingLeft="@dimen/dp_8"
+            android:background="@drawable/shape_comment"
+            android:textColor="@color/coclor_333"
+            android:text="回复"
+            android:textSize="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

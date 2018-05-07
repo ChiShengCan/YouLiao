@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffd845</color>
+    <color name="colorPrimaryDark">#ffd845</color>
+    <color name="colorAccent">#ffd845</color>
+    <color name="main_color">#ffd845</color>
+    <color name="white">@android:color/white</color>
+    <color name="gray">#848383</color>
+    <color name="black">@android:color/black</color>
+    <color name="divider">#e6e6e6</color>
+    <color name="transparent">#0000</color>
+    <color name="textbg">#8F9AA8</color>
+    <color name="coclor_333">#333</color>
+    <color name="coclor_bbdcfb">#bbdcfb</color>
+    <color name="coclor_eee">#eee</color>
+    <color name="coclor_white">#FFF</color>
+    <color name="color_1296db">#1296db</color>
+    <color name="color_3f3f3f">#3f3f3f</color>
+    <color name="color_3a3a3a">#3a3a3a</color>
+    <color name="color_868686">#3f3f3f</color>
+    <color name="color_8a9599">#3f3f3f</color>
+
+
+    <!--日期指示器选中颜色-->
+    <color name="buttonSelectColor">#ffd845</color>
+    <color name="color_red">#c15a50</color>
+
+
+</resources>

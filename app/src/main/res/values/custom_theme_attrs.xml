@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ************************自定义属性资源文件*******************-->
+    <attr name="custom_attr_app_bg" format="color|reference"/>                  <!--背景颜色-->
+    <attr name="custom_attr_app_title_bar_bg" format="color|reference"/>        <!--标题栏的颜色-->
+    <attr name="custom_attr_app_div_bg" format="color|reference"/>              <!--分割线的颜色-->
+
+
+    <attr name="custom_attr_app_imgv_alpha" format="dimension|reference"/>      <!--图片的透明度-->
+
+</resources>

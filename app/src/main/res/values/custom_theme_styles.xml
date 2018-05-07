@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ******************************主题风格资源文件***************************************-->
+    <!--主要实现的是:日夜模式的切换,白天对应一种主题颜色，夜晚对应一套主题颜色-->
+
+
+    <style name="AppThemeDayOrNight" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--**************白天的主题颜色*********-->
+    <style name="AppThemeDayOrNight.Day">
+        <item name="custom_attr_app_bg">@color/custom_color_app_bg_day</item>                               <!--app的背景颜色-->
+        <item name="custom_attr_app_title_bar_bg">@color/custom_color_app_title_bar_bg_day</item>          <!-- 标题栏的背景颜色-->
+        <item name="custom_attr_app_div_bg">@color/custom_color_app_div_bg_day</item>                       <!--分割线的背景颜色-->
+
+
+        <item name="custom_attr_app_imgv_alpha">@dimen/custom_float_imgv_alpha_day</item>                   <!--图片的透明度-->
+    </style>
+
+    <!--**************夜间的主题颜色**********-->
+    <style name="AppThemeDayOrNight.Night">
+        <item name="custom_attr_app_bg">@color/custom_color_app_bg_night</item>                               <!--app的背景颜色-->
+        <item name="custom_attr_app_title_bar_bg">@color/custom_color_app_title_bar_bg_night</item>          <!-- 标题栏的背景颜色-->
+        <item name="custom_attr_app_div_bg">@color/custom_color_app_div_bg_night</item>                       <!--分割线的背景颜色-->
+
+
+        <item name="custom_attr_app_imgv_alpha">@dimen/custom_float_imgv_alpha_night</item>                   <!--图片的透明度-->
+    </style>
+
+
+
+
+    <style name="AppThemeDayOrNight.Day.Preview" />
+
+    <style name="AppThemeDayOrNight.Night.Preview" />
+
+
+
+
+
+</resources>

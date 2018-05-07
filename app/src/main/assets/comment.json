@@ -1,0 +1,74 @@
+{
+  "comments":[
+  {
+  "name": "不爱香菜爱韭菜",
+  "photo": "R.drawable.header_1",
+  "comment": "有病啊老板，拿打工的当什么",
+  "time": "1小时前",
+  "commentCount": "18"
+  },
+  {
+  "name": "让你只是路过",
+  "photo": "R.drawable.header_2",
+  "comment": "好任性",
+  "time": "2小时前",
+  "commentCount": "12"
+  },
+  {
+  "name":"beiBei",
+  "photo":"R.drawable.header_3",
+  "comment":"各位这个视频太有趣",
+  "time":"2小时前",
+  "commentCount":"1"
+  },
+  {
+  "name":"中小企业信息咨询",
+  "photo":"R.drawable.header_4",
+  "comment":"大家有什么问题可以打电话咨询，18831695932",
+  "time":"1小时前",
+  "commentCount":"3"
+  },
+  {
+  "name":"中国何时能睡醒",
+  "photo":"R.drawable.header_5",
+  "comment":"6666",
+  "time":"3小时前",
+  "commentCount":"8"
+  },
+  {
+  "name":"不爱美女爱代码",
+  "photo":"R.drawable.header_6",
+  "comment":"一个逗比的作者",
+  "time":"8小时前",
+  "commentCount":"10"
+  },
+  {
+  "name":"西瓜小视频",
+  "photo":"R.drawable.header_7",
+  "comment":"下载西瓜小视频，答题赢百万",
+  "time":"6小时前",
+  "commentCount":"6"
+  },
+  {
+  "name":"城管大队",
+  "photo":"R.drawable.header_8",
+  "comment":"给我3千城管,干掉美国佬",
+  "time":"6小时前",
+  "commentCount":"4"
+  },
+  {
+  "name":"中信",
+  "photo":"R.drawable.header_9",
+  "comment":"中兴要被玩死了",
+  "time":"5小时前",
+  "commentCount":"22"
+  },
+  {
+  "name":"Robin",
+  "photo":"R.drawable.header_10",
+  "comment":"呵呵呵呵",
+  "time":"9小时前",
+  "commentCount":"2"
+  }
+  ]
+}
