@@ -61,7 +61,7 @@ class HomePresenter(context: Context,view:HomeContract.View): HomeContract.Prese
         observable?.applySchedulers()
                 ?.subscribe {
                    homeBean:HomeBean ->
-                    mView?.setIndicatorHomeData(homeBean)
+                    mView?.setHomeData(homeBean)
                 }
     }
 

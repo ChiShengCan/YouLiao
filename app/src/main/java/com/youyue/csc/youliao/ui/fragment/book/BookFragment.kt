@@ -24,7 +24,6 @@ class BookFragment : Fragment(){
 
 
 
-
     private lateinit var fragments: MutableList<Fragment>
     private lateinit var titles: MutableList<String>
     private lateinit var boyBookFragment: BoyBookFragment

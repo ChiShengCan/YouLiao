@@ -15,8 +15,7 @@ interface HomeContract{
         //设置首页的数据
         fun setHomeData(bean : HomeBean)
 
-        //点击指示器的时候重新设置首页的数据
-        fun setIndicatorHomeData(bean: HomeBean)
+
     }
 
 
