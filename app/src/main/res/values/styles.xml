@@ -10,6 +10,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorTitleTextColor">@color/white</item>
         <item name="colorBackground">@color/white</item>
         <item name="colorTextColor">@color/black</item>
     </style>
@@ -19,6 +20,7 @@
         <item name="colorPrimary">@color/color_3f3f3f</item>
         <item name="colorPrimaryDark">@color/color_3a3a3a</item>
         <item name="colorAccent">@color/color_868686</item>
+        <item name="colorTitleTextColor">@color/white</item>
         <item name="colorBackground">@color/color_3a3a3a</item>
         <item name="colorTextColor">@color/white</item>
 

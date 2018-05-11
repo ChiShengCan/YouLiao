@@ -8,49 +8,35 @@
                 android:background="?attr/colorBackground"
                 tools:context=".ui.fragment.book.BookFragment">
 
-    <RelativeLayout
+    <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar_book"
-        android:background="?attr/colorBackground"
+        android:background="?attr/colorPrimary"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_40">
         <TextView
+            android:layout_gravity="center"
+            android:textSize="@dimen/sp_17"
             android:text="分类"
-            android:layout_centerInParent="true"
-            android:textColor="?attr/colorTextColor"
+           android:gravity="center"
+            android:textColor="?attr/colorTitleTextColor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <ImageView
             android:background="?android:attr/selectableItemBackground"
             android:padding="@dimen/dp_5"
-            android:layout_marginRight="@dimen/dp_8"
-            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_12"
+          android:layout_gravity="right"
             android:layout_centerVertical="true"
             android:src="@drawable/search"
             android:layout_width="30dp"
             android:layout_height="30dp"/>
-    </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
     <View
         android:id="@+id/div1"
         android:background="@color/coclor_eee"
         android:layout_width="match_parent"
         android:layout_height="0.05dp"/>
-    
-    <android.support.design.widget.TabLayout
-        android:id="@+id/tabLayout_book"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dp_40"
-        app:tabIndicatorColor="@color/main_color"
-        app:tabIndicatorHeight="@dimen/dp_1"
-        app:tabGravity="fill"
-        app:tabMode="fixed"
-        app:tabSelectedTextColor="@color/black"
-        app:tabTextColor="@color/gray"></android.support.design.widget.TabLayout>
-    
-    <android.support.v4.view.ViewPager
-        android:id="@+id/viewPager_book"
-        android:layout_below="@id/tabLayout_book"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
 
 
 </LinearLayout>

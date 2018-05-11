@@ -4,6 +4,7 @@
 
     <attr name="colorBackground" format="color"/>
     <attr name="colorTextColor" format="color"/>
+    <attr name="colorTitleTextColor" format="color"/>
 
 
     <!--点赞自定义属性-->

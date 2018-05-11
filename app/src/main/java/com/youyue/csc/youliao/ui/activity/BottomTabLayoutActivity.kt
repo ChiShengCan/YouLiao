@@ -138,10 +138,10 @@ class BottomTabLayoutActivity : BaseActivity() {
         var themeFlag:Int= SPUtils.getInstance(this,"app_theme").getInt("theme")
         if (themeFlag== -1){
           //设置成夜间模式
-            setTheme(R.style.NightTheme)
+            setTheme(R.style.DayTheme)
         }else if (themeFlag==1){
             //设置成白天模式
-            setTheme(R.style.DayTheme)
+            setTheme(R.style.NightTheme)
         }
 
 
