@@ -5,6 +5,7 @@
     <attr name="colorBackground" format="color"/>
     <attr name="colorTextColor" format="color"/>
     <attr name="colorTitleTextColor" format="color"/>
+    <attr name="BookBackgroundColor" format="color"/>
 
 
     <!--点赞自定义属性-->

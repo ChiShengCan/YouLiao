@@ -13,6 +13,7 @@
         <item name="colorTitleTextColor">@color/white</item>
         <item name="colorBackground">@color/white</item>
         <item name="colorTextColor">@color/black</item>
+        <item name="BookBackgroundColor">@color/color_f2f2f2</item>
     </style>
 
     <!--夜间主题-->
@@ -23,6 +24,7 @@
         <item name="colorTitleTextColor">@color/white</item>
         <item name="colorBackground">@color/color_3a3a3a</item>
         <item name="colorTextColor">@color/white</item>
+        <item name="BookBackgroundColor">@color/color_3f3f3f</item>
 
     </style>
 
