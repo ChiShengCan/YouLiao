@@ -114,22 +114,6 @@
                 android:layout_height="wrap_content"/>
         </LinearLayout>
 
-        <RelativeLayout
-            android:layout_toLeftOf="@id/ll_attention"
-            android:layout_width="50dp"
-            android:layout_height="match_parent">
-
-            <com.youyue.csc.youliao.widget.likeview.RxShineButton
-                android:id="@+id/like"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_centerInParent="true"
-                app:btn_color="@android:color/darker_gray"
-                app:btn_fill_color="#fd0101"
-                app:enable_flashing="true"
-                app:shine_size="20dp"
-                app:siShape="@drawable/like"/>
-        </RelativeLayout>
 
 
 

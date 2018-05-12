@@ -218,7 +218,7 @@ class HomeAdapter(context: Context,list: MutableList<HomeBean.IssueListBean.Item
             tv_msg_count=itemView?.findViewById(R.id.tv_msg_count) as TextView
             ll_attention=itemView?.findViewById(R.id.ll_attention) as LinearLayout
             iv_attention=itemView?.findViewById(R.id.iv_attention) as ImageView
-            like=itemView?.findViewById(R.id.like) as RxShineButton
+
 
         }
 
