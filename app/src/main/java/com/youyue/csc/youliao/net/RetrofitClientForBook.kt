@@ -2,7 +2,9 @@ package com.youyue.csc.youliao.net
 
 import android.content.Context
 import okhttp3.Cache
+import okhttp3.Interceptor
 import okhttp3.OkHttpClient
+import okhttp3.Request
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
@@ -12,9 +14,9 @@ import java.util.concurrent.TimeUnit
 
 /**
  * Created by csc on 2018/4/12.
- * explain：Retrofit的封装(这个数关于视频)
+ * explain：Retrofit的封装(这个是关于图书的)
  */
-class RetrofitClient private constructor(context: Context,baseUrl: String){
+class RetrofitClientForBook private constructor(context: Context, baseUrl: String){
     var httpCacheDirectory : File?=null
     var cache:Cache?=null
     var okHttpClient : OkHttpClient?=null
@@ -34,12 +36,23 @@ class RetrofitClient private constructor(context: Context,baseUrl: String){
             cache = Cache(httpCacheDirectory,10*1024*1924)
         }
 
+        //创建头部拦截器
+        var headerInterceptor:Interceptor= Interceptor{
+            var build:Request=it.request().newBuilder()
+                    .addHeader("access-token","eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiMTU3MzI2MzA4NTQiLCJpYXQiOjE1MjU1MDY0MTMsImV4cCI6MTUyODA5ODQxM30.A-1N4aGgvNru3pakac2szrA96Vu_isRngkRguuQ28jw")
+                    .addHeader("app-type","Android")
+                    .build()
+            return@Interceptor it.proceed(build)
+        }
+
         //创建OkHttp
         okHttpClient=OkHttpClient.Builder()
                 //添加日志拦截器
                 .addNetworkInterceptor( HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY))
                 //添加缓存
                 .cache(cache)
+                //添加头部拦截器
+                .addInterceptor(headerInterceptor)
                 //添加缓存拦截器
                 .addInterceptor(CacheInterceptor(mContext))
                 .addNetworkInterceptor(CacheInterceptor(mContext))
@@ -66,13 +79,13 @@ class RetrofitClient private constructor(context: Context,baseUrl: String){
     companion object {
         //单例
         @Volatile
-        var instence:RetrofitClient?=null
+        var instence:RetrofitClientForBook?=null
 
-        fun getInstance(context: Context,baseUrl:String): RetrofitClient? {
+        fun getInstance(context: Context,baseUrl:String): RetrofitClientForBook? {
             if (instence == null){
-                synchronized(RetrofitClient::class){
+                synchronized(RetrofitClientForBook::class){
                     if (instence == null){
-                        instence = RetrofitClient(context,baseUrl)
+                        instence = RetrofitClientForBook(context,baseUrl)
                     }
                 }
             }

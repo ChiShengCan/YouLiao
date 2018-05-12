@@ -3,7 +3,6 @@ package com.youyue.csc.youliao.ui.activity
 import android.os.Bundle
 import android.os.Handler
 import android.support.v7.app.AppCompatActivity
-import android.view.WindowManager
 import com.youyue.csc.youliao.R
 import com.youyue.csc.youliao.utils.RxHelper
 import com.youyue.csc.youliao.utils.newIntent
@@ -21,7 +20,9 @@ class SplashActivity:AppCompatActivity(){
         super.onCreate(savedInstanceState)
 
         //设置全屏显示
-        window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN)
+        //window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN)
+
+
         setContentView(R.layout.activity_splash)
 
        /* //设置延迟跳转
@@ -78,6 +79,10 @@ class SplashActivity:AppCompatActivity(){
     override fun onDestroy() {
         MyHandler(this).removeCallbacksAndMessages(null)
         super.onDestroy()
+    }
+
+    override fun onBackPressed() {
+        return
     }
 
 }

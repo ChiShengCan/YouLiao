@@ -12,9 +12,9 @@ import java.util.concurrent.TimeUnit
 
 /**
  * Created by csc on 2018/4/12.
- * explain：Retrofit的封装(这个数关于视频)
+ * explain：Retrofit的封装(这个关于漫画)
  */
-class RetrofitClient private constructor(context: Context,baseUrl: String){
+class RetrofitClientForCartoon private constructor(context: Context, baseUrl: String){
     var httpCacheDirectory : File?=null
     var cache:Cache?=null
     var okHttpClient : OkHttpClient?=null
@@ -66,13 +66,13 @@ class RetrofitClient private constructor(context: Context,baseUrl: String){
     companion object {
         //单例
         @Volatile
-        var instence:RetrofitClient?=null
+        var instence:RetrofitClientForCartoon?=null
 
-        fun getInstance(context: Context,baseUrl:String): RetrofitClient? {
+        fun getInstance(context: Context,baseUrl:String): RetrofitClientForCartoon? {
             if (instence == null){
-                synchronized(RetrofitClient::class){
+                synchronized(RetrofitClientForCartoon::class){
                     if (instence == null){
-                        instence = RetrofitClient(context,baseUrl)
+                        instence = RetrofitClientForCartoon(context,baseUrl)
                     }
                 }
             }
