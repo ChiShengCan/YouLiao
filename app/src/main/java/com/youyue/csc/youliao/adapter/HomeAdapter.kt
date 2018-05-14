@@ -91,7 +91,7 @@ class HomeAdapter(context: Context,list: MutableList<HomeBean.IssueListBean.Item
         holder?.tv_msg_count?.text=""+bean?.data?.consumption?.replyCount.toString()
 
         //加载圆形头像
-        Glide.with(context).load(authorHeader?.icon as String).asBitmap().centerCrop().into(object : BitmapImageViewTarget(holder?.iv_user) {  //记得必须是静态图片asBitmap()
+        Glide.with(context).load(authorHeader?.icon).asBitmap().centerCrop().into(object : BitmapImageViewTarget(holder?.iv_user) {  //记得必须是静态图片asBitmap()
 
             override fun setResource(resource: Bitmap?) {
                 super.setResource(resource)
