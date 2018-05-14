@@ -29,11 +29,8 @@
     </style>
 
 
-
-
-
-
-
+    <!--设置控件android.support.design.widget.AppBarLayout的铺层主题-->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
 
 

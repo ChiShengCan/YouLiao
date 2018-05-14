@@ -55,12 +55,20 @@ dependencies {
     //flexbox
     compile 'com.google.android:flexbox:0.3.0-alpha2'
     //glide
-    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.github.bumptech.glide:glide:4.1.1'
+    //picasso
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    //设计库
     implementation 'com.android.support:design:25.4.0'
+    //第三方的视频播放器
     compile 'com.shuyu:GSYVideoPlayer:1.6.8'
     //rxdownload
     compile 'zlc.season:rxdownload2:2.0.4'
     //日志打印
     implementation 'com.orhanobut:logger:2.2.0'
+    //卡片布局
+
+    //小米推送
     implementation files('lib/MiPush_SDK_Client_3_6_2.jar')
+
 }

@@ -109,6 +109,8 @@
 
         <activity android:name=".ui.activity.book.CartoonListActivity">
         </activity>
+        <activity android:name=".ui.activity.book.CartoonDetailActivity">
+        </activity>
     </application>
 
 </manifest>

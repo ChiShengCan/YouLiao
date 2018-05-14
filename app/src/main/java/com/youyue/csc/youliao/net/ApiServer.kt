@@ -24,6 +24,9 @@ interface ApiServer{
         //关于漫画的基地址
         val CARTOON_BASE_URL:String="http://comic.oacg.cn/"
 
+        //漫画图片的基地址
+        val PICTURE_CARTOON_URL="http://gx.cdn.comic.oacg.cn"
+
     }
 
     //获取首页的第一页数据

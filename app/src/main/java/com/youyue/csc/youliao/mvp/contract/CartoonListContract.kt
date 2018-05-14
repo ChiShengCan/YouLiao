@@ -15,13 +15,17 @@ interface CartoonListContract{
         fun setCartoonListData(bean : CartoonListBean)
 
 
+
+
     }
 
 
     interface Presenter : BasePresenter {
 
         //请求漫画列表数据(传入的参数是选择漫画的类型:-1表示全部，1~15表示对应的类型，和页数，用来分页加载的)
-        fun requestCartoonListData(map: HashMap<String, Any>?)
+        fun requestCartoonListData(theme_id:Int)
+
+
 
 
     }

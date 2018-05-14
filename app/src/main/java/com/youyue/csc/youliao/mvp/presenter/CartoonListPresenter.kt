@@ -28,9 +28,9 @@ class CartoonListPresenter(context: Context, view:CartoonListContract.View): Car
     }
 
     //根据选择的漫画类型和分页加载(漫画的类型:-1表示全部，1~15代表对应的类型)
-    override fun requestCartoonListData(map: HashMap<String, Any>?) {
+    override fun requestCartoonListData(theme_id:Int) {
         val observable:Observable<CartoonListBean>?=mContext?.let {
-            mModel.loadBookTypeData(it,map)
+            mModel.loadBookTypeData(mContext!!,theme_id)
         }
 
         observable?.applySchedulers()

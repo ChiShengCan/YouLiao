@@ -2,9 +2,7 @@ package com.youyue.csc.youliao.adapter
 
 import android.content.Context
 import android.content.Intent
-import android.graphics.Bitmap
 import android.os.Parcelable
-import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -14,7 +12,7 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 import com.bumptech.glide.Glide
-import com.bumptech.glide.request.target.BitmapImageViewTarget
+import com.bumptech.glide.request.RequestOptions
 import com.youyue.csc.youliao.R
 import com.youyue.csc.youliao.bean.HomeBean
 import com.youyue.csc.youliao.bean.VideoBean
@@ -91,17 +89,7 @@ class HomeAdapter(context: Context,list: MutableList<HomeBean.IssueListBean.Item
         holder?.tv_msg_count?.text=""+bean?.data?.consumption?.replyCount.toString()
 
         //加载圆形头像
-        Glide.with(context).load(authorHeader?.icon).asBitmap().centerCrop().into(object : BitmapImageViewTarget(holder?.iv_user) {  //记得必须是静态图片asBitmap()
-
-            override fun setResource(resource: Bitmap?) {
-                super.setResource(resource)
-                //val circular = RoundedBitmapDrawableFactory.create(BaseApp.getInstance(), resource)
-                val circular = RoundedBitmapDrawableFactory.create(context?.resources,resource)
-                circular.setCircular(true)//画圆
-                holder?.iv_user?.setImageDrawable(circular)
-            }
-
-        })
+        Glide.with(context).load(authorHeader?.icon).apply(RequestOptions.circleCropTransform()).into(holder?.iv_user)
 
         //设置视频图片
         Glide.with(context).load(photo).into(holder?.iv_photo)
@@ -224,3 +212,5 @@ class HomeAdapter(context: Context,list: MutableList<HomeBean.IssueListBean.Item
 
     }
 }
+
+
